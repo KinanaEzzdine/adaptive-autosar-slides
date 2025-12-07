@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Slide 3 – Classic vs Adaptive AUTOSAR</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body{
+      margin:0; font-family:Inter, sans-serif; color:#e5e7eb;
+      background:linear-gradient(180deg,#0f172a,#111827);
+      min-height:100vh; display:flex; align-items:center; justify-content:center;
+      padding:20px;
+    }
+    .card{
+      max-width:1000px; width:100%; border-radius:24px; padding:40px;
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.08);
+      box-shadow:0 20px 60px rgba(0,0,0,0.4);
+      backdrop-filter:blur(8px);
+    }
+    h1{
+      text-align:center; margin:0 0 20px; font-size:36px;
+      background:linear-gradient(90deg,#fff,#c3f9ff 40%,#a7ffe3 80%);
+      -webkit-background-clip:text; color:transparent;
+    }
+    .subtitle{
+      text-align:center; color:#9ca3af; font-size:18px; margin-bottom:30px;
+    }
+    table{
+      width:100%; border-collapse:collapse; margin-top:10px;
+    }
+    th, td{
+      padding:14px; border-bottom:1px solid rgba(255,255,255,0.1);
+      text-align:center; font-size:16px;
+    }
+    th{color:#a7ffe3; font-weight:700;}
+    td{color:#e5e7eb;}
+    .feature{color:#9ca3af; font-weight:700;}
+    .nav{display:flex; justify-content:space-between; margin-top:30px}
+    .btn{
+      padding:12px 20px; border-radius:12px;
+      border:1px solid rgba(255,255,255,0.15);
+      background:rgba(255,255,255,0.05);
+      text-decoration:none; color:#e5e7eb;
+    }
+    tr:hover td{background:rgba(255,255,255,0.05); transition:0.2s}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Slide 3 – Classic AUTOSAR vs Adaptive AUTOSAR ⚖️</h1>
+    <p class="subtitle">“Classic vs Adaptive AUTOSAR: Key Differences”</p>
+
+    <table>
+      <tr>
+        <th class="feature">Feature</th>
+        <th>Classic AUTOSAR (CP)</th>
+        <th>Adaptive AUTOSAR (AP)</th>
+      </tr>
+      <tr>
+        <td class="feature">Hardware</td>
+        <td>Microcontrollers (MCUs)</td>
+        <td>High‑performance ECUs / Multi‑core CPUs</td>
+      </tr>
+      <tr>
+        <td class="feature">OS Type</td>
+        <td>Static, Real‑Time OS</td>
+        <td>Dynamic, POSIX‑based OS</td>
+      </tr>
+      <tr>
+        <td class="feature">Programming</td>
+        <td>Mostly C</td>
+        <td>C++, Python, Modern languages</td>
+      </tr>
+      <tr>
+        <td class="feature">Updates</td>
+        <td>Limited</td>
+        <td>Over‑the‑Air (OTA)</td>
+      </tr>
+      <tr>
+        <td class="feature">Apps</td>
+        <td>Safety‑critical, timing‑strict</td>
+        <td>AI, ADAS, autonomous driving</td>
+      </tr>
+      <tr>
+        <td class="feature">Architecture</td>
+        <td>Static scheduling</td>
+        <td>Dynamic services, SOA</td>
+      </tr>
+      <tr>
+        <td class="feature">Flexibility</td>
+        <td>Low</td>
+        <td>Very High</td>
+      </tr>
+    </table>
+
+    <div class="nav">
+      <a class="btn" href="slide2.html">◂ Back to Slide 2</a>
+      <a class="btn" href="slide4.html">Next ▸</a>
+    </div>
+  </div>
+</body>
+</html>

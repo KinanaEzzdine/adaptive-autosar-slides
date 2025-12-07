@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Slide 5 – Adaptive AUTOSAR Architecture Overview</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body{
+      margin:0; font-family:Inter, sans-serif; color:#e5e7eb;
+      background:linear-gradient(180deg,#0f172a,#111827);
+      min-height:100vh; display:flex; align-items:center; justify-content:center;
+      padding:20px;
+    }
+    .card{
+      max-width:1100px; width:100%; border-radius:24px; padding:40px;
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.08);
+      box-shadow:0 20px 60px rgba(0,0,0,0.4);
+      backdrop-filter:blur(8px);
+    }
+    .eyebrow{ text-transform:uppercase; letter-spacing:.2em; font-size:12px; color:#9ca3af; margin-bottom:8px; }
+    h1{
+      margin:0 0 10px; font-size:34px; text-wrap:balance;
+      background:linear-gradient(90deg,#fff,#c3f9ff 40%,#a7ffe3 80%);
+      -webkit-background-clip:text; color:transparent;
+    }
+    .subtitle{font-size:18px; color:#9ca3af; margin-bottom:24px}
+
+    .blocks{display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:14px}
+    .block{display:flex; flex-direction:column; gap:8px; padding:16px; border-radius:16px;
+      background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.06);
+      transition:transform .25s ease, background .25s ease}
+    .block:hover{transform:scale(1.04); background:rgba(255,255,255,0.08)}
+    .block h3{margin:0; font-size:18px; color:#a7ffe3}
+    .block ul{margin:0; padding-left:18px}
+    .block li{margin:6px 0; font-size:15.5px}
+
+    .nav{display:flex; gap:10px; margin-top:26px}
+    .btn{display:inline-block; padding:12px 16px; border-radius:12px; border:1px solid rgba(255,255,255,0.15); background:rgba(255,255,255,0.05); text-decoration:none; color:#e5e7eb}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="eyebrow">🧭 Slide 5 – Architecture</div>
+    <h1>Adaptive AUTOSAR Architecture Overview</h1>
+    <p class="subtitle">Main building blocks of the Adaptive Platform</p>
+
+    <div class="blocks">
+      <div class="block">
+        <h3>Adaptive OS (POSIX‑Based)</h3>
+        <ul>
+          <li>Runs on high‑performance ECUs</li>
+          <li>Supports dynamic applications</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <h3>Execution Management (EM)</h3>
+        <ul>
+          <li>Starts, stops, and supervises apps</li>
+          <li>Handles lifecycle of services</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <h3>Communication Middleware (SOME/IP)</h3>
+        <ul>
+          <li>Service‑oriented communication</li>
+          <li>Dynamic discovery of services</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <h3>Service‑Oriented Architecture (SOA)</h3>
+        <ul>
+          <li>Apps communicate via services, not signals</li>
+          <li>More flexible & scalable</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <h3>Update & Configuration Management</h3>
+        <ul>
+          <li>Supports OTA updates</li>
+          <li>Handles new app installations</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <h3>Diagnostics & Security Modules</h3>
+        <ul>
+          <li>Security stack (cryptography, secure boot)</li>
+          <li>Diagnostics for modern ECUs</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="nav">
+      <a class="btn" href="slide4.html">◂ Back to Slide 4</a>
+      <a class="btn" href="slide6.html">Next ▸</a>
+    </div>
+  </div>
+</body>
+</html>

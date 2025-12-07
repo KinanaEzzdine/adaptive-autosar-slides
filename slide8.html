@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Slide 8 – Challenges of Adaptive AUTOSAR</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body{
+      margin:0; font-family:Inter, sans-serif; color:#e5e7eb;
+      background:linear-gradient(180deg,#0f172a,#111827);
+      min-height:100vh; display:flex; align-items:center; justify-content:center;
+      padding:20px;
+    }
+    .card{
+      max-width:1100px; width:100%; border-radius:24px; padding:40px;
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.08);
+      box-shadow:0 20px 60px rgba(0,0,0,0.4);
+      backdrop-filter:blur(8px);
+    }
+    .eyebrow{ text-transform:uppercase; letter-spacing:.2em; font-size:12px; color:#9ca3af; margin-bottom:8px; }
+    h1{
+      margin:0 0 10px; font-size:32px; text-wrap:balance;
+      background:linear-gradient(90deg,#fff,#c3f9ff 40%,#a7ffe3 80%);
+      -webkit-background-clip:text; color:transparent;
+    }
+    .subtitle{font-size:18px; color:#9ca3af; margin-bottom:24px}
+
+    .blocks{display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:14px}
+    .block{display:flex; flex-direction:column; gap:8px; padding:16px; border-radius:16px;
+      background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.06);
+      transition:transform .25s ease, background .25s ease}
+    .block:hover{transform:scale(1.04); background:rgba(255,255,255,0.08)}
+    .block h3{margin:0; font-size:18px; color:#ffb3b3}
+    .block ul{margin:0; padding-left:18px}
+    .block li{margin:6px 0; font-size:15.5px}
+
+    .nav{display:flex; gap:10px; margin-top:26px}
+    .btn{display:inline-block; padding:12px 16px; border-radius:12px; border:1px solid rgba(255,255,255,0.15); background:rgba(255,255,255,0.05); text-decoration:none; color:#e5e7eb}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="eyebrow">⚠️ Slide 8 – Challenges</div>
+    <h1>Challenges and Engineering Limitations of Adaptive AUTOSAR</h1>
+    <p class="subtitle">Key obstacles in adopting the Adaptive Platform</p>
+
+    <div class="blocks">
+      <div class="block">
+        <h3>High Computational Requirements</h3>
+        <ul>
+          <li>Needs multi-core CPUs, powerful ECUs</li>
+          <li>Cost + thermal management become critical</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <h3>Complexity of SOA Architecture</h3>
+        <ul>
+          <li>Dynamic service discovery</li>
+          <li>Synchronization & timing non-determinism</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <h3>Safety Certification (ISO 26262)</h3>
+        <ul>
+          <li>Dynamic behavior makes certification harder</li>
+          <li>Non-static scheduling complicates validation</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <h3>Cybersecurity Risks</h3>
+        <ul>
+          <li>OTA updates increase attack surface</li>
+          <li>Requires secure boot, encryption, intrusion detection</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <h3>Integration with Legacy Systems</h3>
+        <ul>
+          <li>Hybrid architectures (Classic + Adaptive)</li>
+          <li>Cross-communication can be difficult</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <h3>Large Software Development Effort</h3>
+        <ul>
+          <li>Requires new toolchains (Vector, EB, ETAS)</li>
+          <li>Engineers need OS + networking expertise</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="nav">
+      <a class="btn" href="slide7.html">◂ Back to Slide 7</a>
+      <a class="btn" href="slide9.html">Next ▸</a>
+    </div>
+  </div>
+</body>
+</html>

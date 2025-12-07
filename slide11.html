@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Slide 11 – Q&A + Thank You</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body{
+      margin:0; font-family:Inter, sans-serif; color:#e5e7eb;
+      background:linear-gradient(180deg,#0f172a,#111827);
+      min-height:100vh; display:flex; align-items:center; justify-content:center;
+      padding:20px;
+    }
+    .card{
+      max-width:1000px; width:100%; border-radius:24px; padding:40px;
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.08);
+      box-shadow:0 20px 60px rgba(0,0,0,0.4);
+      backdrop-filter:blur(8px);
+    }
+    .eyebrow{ text-transform:uppercase; letter-spacing:.2em; font-size:12px; color:#9ca3af; margin-bottom:8px; }
+    h1{
+      margin:0 0 6px; font-size:34px; text-wrap:balance;
+      background:linear-gradient(90deg,#fff,#c3f9ff 40%,#a7ffe3 80%);
+      -webkit-background-clip:text; color:transparent;
+    }
+    .subtitle{font-size:16px; color:#9ca3af; margin:0 0 20px}
+
+    .qa-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:14px; margin:10px 0 24px}
+    .qa{
+      padding:16px; border-radius:16px; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.06);
+      transition:transform .25s ease, background .25s ease
+    }
+    .qa:hover{transform:scale(1.04); background:rgba(255,255,255,0.08)}
+    .qa h3{margin:0 0 8px; font-size:16px; color:#a7ffe3}
+    .qa p{margin:0; font-size:15.5px; color:#e5e7eb}
+
+    .thankyou{
+      margin-top:8px; padding:18px; border-radius:16px; text-align:center;
+      border:1px solid rgba(255,255,255,0.08); background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+    }
+    .thanks-title{margin:0 0 8px; font-size:22px}
+    .contact{margin:6px 0 0; color:#9ca3af; font-size:14px}
+
+    .nav{display:flex; gap:10px; margin-top:20px; justify-content:center}
+    .btn{display:inline-block; padding:12px 16px; border-radius:12px; border:1px solid rgba(255,255,255,0.15); background:rgba(255,255,255,0.05); text-decoration:none; color:#e5e7eb}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="eyebrow">🏁 Slide 11</div>
+    <h1>Q&A + Thank You</h1>
+    <p class="subtitle">Questions on Adaptive AUTOSAR, architecture, or use cases?</p>
+
+    <div class="qa-grid">
+      <div class="qa">
+        <h3>Q: How does Adaptive coexist with Classic?</h3>
+        <p>A: Via gateways and binding layers; Classic handles hard real-time, Adaptive handles AI & apps.</p>
+      </div>
+      <div class="qa">
+        <h3>Q: Why POSIX?</h3>
+        <p>A: Enables dynamic processes, standard APIs, and portability across high-performance ECUs.</p>
+      </div>
+      <div class="qa">
+        <h3>Q: How are services discovered?</h3>
+        <p>A: SOME/IP with service discovery (SD) or ara::com mechanisms for dynamic registration.</p>
+      </div>
+      <div class="qa">
+        <h3>Q: What about safety certification?</h3>
+        <p>A: Requires careful partitioning, monitoring, and evidence; dynamic scheduling adds effort.</p>
+      </div>
+    </div>
+
+    <div class="thankyou">
+      <p class="thanks-title">Thank you! 👋</p>
+      <p>Happy to answer more questions or share the code.</p>
+      <p class="contact">Contact: your.email@example.com • LinkedIn: linkedin.com/in/yourname</p>
+    </div>
+
+    <div class="nav">
+      <a class="btn" href="slide10.html">◂ Back to Slide 10</a>
+      <a class="btn" href="index.html">Go to Slide 1</a>
+    </div>
+  </div>
+</body>
+</html>

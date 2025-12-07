@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Slide 4 – Why We Need Adaptive AUTOSAR</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body{
+      margin:0; font-family:Inter, sans-serif; color:#e5e7eb;
+      background:linear-gradient(180deg,#0f172a,#111827);
+      min-height:100vh; display:flex; align-items:center; justify-content:center;
+      padding:20px;
+    }
+    .card{
+      max-width:1000px; width:100%; border-radius:24px; padding:40px;
+      background:rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.08);
+      box-shadow:0 20px 60px rgba(0,0,0,0.4);
+      backdrop-filter:blur(8px);
+    }
+    .eyebrow{ text-transform:uppercase; letter-spacing:.2em; font-size:12px; color:#9ca3af; margin-bottom:8px; }
+    h1{
+      margin:0 0 10px; font-size:36px; text-wrap:balance;
+      background:linear-gradient(90deg,#fff,#c3f9ff 40%,#a7ffe3 80%);
+      -webkit-background-clip:text; color:transparent;
+    }
+    .subtitle{font-size:18px; color:#9ca3af; margin-bottom:24px}
+    .grid{display:grid; gap:12px}
+    .point{display:flex; gap:12px; background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.06);
+      padding:14px 16px; border-radius:14px; transition:transform .25s ease, background .25s ease}
+    .point:hover{transform:scale(1.05); background:rgba(255,255,255,0.08)}
+    .dot{width:10px; height:10px; border-radius:50%; background:conic-gradient(#00e0a4,#6ee7ff); margin-top:6px}
+    p{margin:0; font-size:17px}
+    .nav{display:flex; gap:10px; margin-top:26px}
+    .btn{display:inline-block; padding:12px 16px; border-radius:12px; border:1px solid rgba(255,255,255,0.15); background:rgba(255,255,255,0.05); text-decoration:none; color:#e5e7eb}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="eyebrow">🚗⚡ Slide 4 – Why Adaptive AUTOSAR</div>
+    <h1>Why the Automotive Industry Needs Adaptive AUTOSAR</h1>
+    <p class="subtitle">Drivers behind the shift to the Adaptive Platform</p>
+
+    <div class="grid" role="list">
+      <div class="point" role="listitem"><span class="dot"></span><p>Traditional ECUs can’t handle <strong>AI</strong> and other high‑processing tasks efficiently.</p></div>
+      <div class="point" role="listitem"><span class="dot"></span><p>Autonomous driving requires real‑time <strong>sensor fusion</strong> (camera, lidar, radar).</p></div>
+      <div class="point" role="listitem"><span class="dot"></span><p>Need for <strong>Over‑the‑Air (OTA)</strong> updates—like Tesla—for rapid feature rollout & security patches.</p></div>
+      <div class="point" role="listitem"><span class="dot"></span><p>Cars are shifting to <strong>centralized computing</strong> instead of many small ECUs.</p></div>
+      <div class="point" role="listitem"><span class="dot"></span><p>Modern vehicles need a <strong>Service‑Oriented Architecture (SOA)</strong> for modular services.</p></div>
+      <div class="point" role="listitem"><span class="dot"></span><p>High flexibility for apps that <strong>start/stop dynamically</strong> based on needs.</p></div>
+    </div>
+
+    <div class="nav">
+      <a class="btn" href="slide3.html">◂ Back to Slide 3</a>
+      <a class="btn" href="slide5.html">Next ▸</a>
+    </div>
+  </div>
+</body>
+</html>
